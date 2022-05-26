@@ -1,0 +1,14 @@
+$color__primary: #ffb82d;
+$color__secondary: #2d3448;
+$color__default: #aeaeae;
+
+@mixin field() {
+	border-radius: 5px;
+	border: 1px solid $color__secondary;
+	&:hover {
+		border-color: darken($color__secondary, 10%);
+	}
+	&:focus {
+		border-color: darken($color__secondary, 20%);
+	}
+}

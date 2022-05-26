@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+.groupButton {
+	.groupButton__button {
+		border-radius: 0;
+		border-left: 1px solid white;
+		&:first-child {
+			border-left: none;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		&:last-child {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	}
+}

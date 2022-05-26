@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	gap: 20px;
+
+	@media screen and (max-width: 500px) {
+		flex-wrap: wrap;
+	}
+	.header__link {
+		font-size: 20px;
+		cursor: pointer;
+		color: #2d3448;
+		text-decoration: none;
+		&:hover {
+			color: $color__primary;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@import "../../variables.scss";
+
+.newsPage {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.newsList {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 1fr 1fr;
+		@media screen and (max-width: 800px) {
+			grid-template-columns: 1fr;
+		}
+	}
+}

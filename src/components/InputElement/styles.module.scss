@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+
+.input__container {
+	position: relative;
+	display: flex;
+	.input {
+		flex-grow: 1;
+		padding: 10px;
+		@include field();
+	}
+	.input_error {
+		border-color: red;
+		&:hover {
+			border-color: red;
+		}
+		&:focus {
+			border-color: darken($color__secondary, 20%);
+		}
+	}
+	.input__endAdornmentIcon {
+		top: 10px;
+		right: 10px;
+		position: absolute;
+	}
+}

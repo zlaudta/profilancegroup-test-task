@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+$paddingTop: 6px;
+
+.textarea {
+	padding: 0 10px;
+	padding-top: $paddingTop;
+	@include field();
+}
+
+:export {
+	paddingTop: $paddingTop;
+}

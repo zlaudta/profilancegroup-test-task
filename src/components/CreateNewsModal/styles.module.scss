@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+.newsForm {
+	width: 300px;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	.newsForm__name {
+		font-size: 18px;
+	}
+}

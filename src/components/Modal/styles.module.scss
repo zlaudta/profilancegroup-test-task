@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+.mask {
+	background-color: rgba(255, 236, 198, 0.5);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal {
+	z-index: 150;
+	background-color: #fff;
+	padding: 20px;
+}
