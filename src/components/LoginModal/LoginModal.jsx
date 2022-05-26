@@ -27,7 +27,7 @@ const LoginModal = ({ onClose }) => {
 	}, []);
 	const onSubmit = useCallback(() => {
 		if (!signUp) {
-			if (users.find((name) => name === username)?.password === password) {
+			if (users.find(({ name }) => name === username)?.password === password) {
 				dispatch(login({ username, password }));
 				onClose();
 			} else {
